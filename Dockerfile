@@ -13,7 +13,7 @@ ENV LANG C.UTF-8
 
 # add user
 RUN useradd --create-home --shell /bin/bash punits && \
-    echo "punits:default_password_change_me" | chpasswd && \
+    echo "punits:change_this" | chpasswd && \
     adduser punits sudo
 
 USER punits
